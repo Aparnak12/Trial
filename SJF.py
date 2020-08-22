@@ -1,5 +1,4 @@
 import operator
-import itertools
 
 def hasArrived(currentTime,arrivalTime) :
     if(arrivalTime < currentTime) :
@@ -35,7 +34,7 @@ GC = []
 GC.append(0)
 i = 0
 for ele in ZAT :
-    GC.append((ele[0],GC[i],GC[i]+ele[2]))
+    GC.append((ele[0],GC[i],GC[i]+ele[2])) #might throw an error here
     i = i+1
 
 print(GC)
@@ -47,6 +46,6 @@ for ele in NZAT :
         i = i+1
         ct = ct + GC[i]
     else :
-     
+        #doubt 
 print(GC)
 
